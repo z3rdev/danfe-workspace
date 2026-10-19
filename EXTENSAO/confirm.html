@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Confirmar envio DANFE</title>
+    <link rel="stylesheet" href="./confirm.css">
+  </head>
+  <body>
+    <main class="confirm">
+      <header>
+        <p>Texto NF-e detectado</p>
+        <h1>Confirmar envio</h1>
+      </header>
+
+      <section class="summary">
+        <div>
+          <span>Chaves</span>
+          <strong id="keyCount">0</strong>
+        </div>
+        <div>
+          <span>Linhas</span>
+          <strong id="lineCount">0</strong>
+        </div>
+      </section>
+
+      <section class="preview-card">
+        <label for="previewText">Previa do texto copiado</label>
+        <textarea id="previewText" readonly></textarea>
+      </section>
+
+      <div class="actions">
+        <button id="confirmSend" type="button">Enviar agora</button>
+        <button id="cancelSend" type="button" class="secondary">Cancelar</button>
+      </div>
+    </main>
+
+    <script src="./confirm.js"></script>
+  </body>
+</html>

@@ -1,3 +1,5 @@
+![DANFE Workspace — notas organizadas, rotina simplificada](docs/assets/readme-hero.svg)
+
 # DANFE Workspace
 
 **Documentos fiscais organizados. Processos simplificados.**

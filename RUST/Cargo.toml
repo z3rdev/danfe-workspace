@@ -1,0 +1,12 @@
+[package]
+name = "api-danfe-rust"
+version = "0.1.0"
+edition = "2021"
+description = "Nucleo Rust do microsservico local de consultas DANFE"
+
+[dependencies]
+axum = "0.8"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "net", "rt-multi-thread"] }
+tower-http = { version = "0.6", features = ["cors", "trace"] }

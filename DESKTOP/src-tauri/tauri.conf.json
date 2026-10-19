@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "DANFE Workspace",
+  "version": "0.1.15",
+  "identifier": "br.delmmar.api-danfe.desktop",
+  "build": {
+    "beforeDevCommand": "pnpm --dir ../FRONTEND dev",
+    "beforeBuildCommand": "pnpm --dir ../FRONTEND build",
+    "devUrl": "http://127.0.0.1:5173",
+    "frontendDist": "../../FRONTEND/dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "DANFE Workspace",
+        "width": 1440,
+        "height": 900,
+        "minWidth": 1040,
+        "minHeight": 680,
+        "decorations": false,
+        "resizable": true,
+        "maximized": true,
+        "shadow": false,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": false,
+    "createUpdaterArtifacts": true,
+    "icon": [
+      "icons/icon.ico"
+    ],
+    "resources": [
+      "resources/full-installer"
+    ],
+    "windows": {
+      "nsis": {
+        "installMode": "perMachine",
+        "installerHooks": "./windows/hooks.nsh"
+      }
+    }
+  },
+  "plugins": {
+    "updater": {
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEM0N0NGOEMxRkZEN0QxMzYKUldRMjBkZi93Zmg4eEtZUzhZUmxsZ2Zxclc2eVFpVDdEaTZqdVkwNHg3NGFRSkxhWUczUjIvb2gK",
+      "endpoints": [
+        "https://s3.nexusnerds.com.br/z3-releases/danfe-workspace/latest.json"
+      ],
+      "requireSignedVersion": true,
+      "windows": {
+        "installMode": "passive"
+      }
+    }
+  }
+}

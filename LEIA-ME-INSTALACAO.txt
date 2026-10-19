@@ -1,0 +1,13 @@
+﻿API DANFE - pacote instalavel
+=============================
+
+1. Extraia esta pasta em um local fixo.
+2. Execute INSTALAR_SERVICOS_ADMIN.bat.
+3. Uma janela de progresso mostra o que esta sendo instalado.
+4. O backend inicia em http://localhost:3000.
+
+Observacao:
+- node_modules e .tools nao vao no pacote; o instalador instala o PM2 localmente pelo npm e executa npm install se precisar.
+- O backend fica gerenciado pelo PM2 e e restaurado no login do Windows.
+- O terminal permanece oculto; o acompanhamento aparece na janela "API DANFE - Instalacao".
+- PDFs/XMLs/JSONs/logs locais nao sao copiados para este pacote.

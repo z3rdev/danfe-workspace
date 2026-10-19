@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DANFE Captura</title>
+    <link rel="stylesheet" href="./popup.css">
+  </head>
+  <body>
+    <main class="popup">
+      <header>
+        <p>Microservico DANFE</p>
+        <h1>Captura NF-e</h1>
+      </header>
+
+      <section class="status-card">
+        <span id="apiStatus">Verificando...</span>
+        <strong id="lastSummary">Aguardando copia</strong>
+      </section>
+
+      <div class="actions">
+        <button id="sendClipboard" type="button">Enviar clipboard</button>
+        <button id="openPanel" type="button" class="ghost">Abrir painel</button>
+        <button id="stopAutomation" type="button" class="danger">Interromper</button>
+        <button id="toggleSettings" type="button" class="ghost">Config</button>
+      </div>
+
+      <section id="settingsPanel" class="settings-panel" hidden>
+        <label class="check-row">
+          <input id="autoSend" type="checkbox">
+          Detectar texto copiado
+        </label>
+
+        <label class="check-row">
+          <input id="confirmBeforeSend" type="checkbox">
+          Pedir confirmacao
+        </label>
+
+        <label class="check-row">
+          <input id="onlyMarked" type="checkbox">
+          Somente linhas True
+        </label>
+
+        <div class="grid-two">
+          <div>
+            <label for="intervalMs">Intervalo</label>
+            <input id="intervalMs" type="number" min="0" max="5000" step="100">
+          </div>
+          <div>
+            <label for="apiBase">API local</label>
+            <input id="apiBase" type="text" spellcheck="false" autocomplete="off">
+          </div>
+        </div>
+
+        <button id="saveSettings" type="button" class="wide">Salvar config</button>
+
+        <label for="manualText">Colar manualmente</label>
+        <textarea id="manualText" spellcheck="false" placeholder="Cole aqui se o navegador bloquear a leitura do clipboard"></textarea>
+        <button id="sendManual" type="button" class="wide secondary">Enviar texto colado</button>
+
+        <pre id="resultOutput">{}</pre>
+      </section>
+    </main>
+
+    <script src="./popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "api-danfe-backend",
+  "version": "1.0.0",
+  "description": "Backend local para testar a API publica do Consulta DANFE.",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch --watch-path=src --watch-path=scripts/dev.mjs --watch-path=.env scripts/dev.mjs",
+    "check": "node --check src/server.js",
+    "test": "node --test",
+    "release:publish": "node scripts/publish-release.mjs"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1152.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "fast-xml-parser": "^5.11.2",
+    "morgan": "^1.10.1",
+    "mssql": "^12.7.9",
+    "multer": "^2.0.2"
+  }
+}

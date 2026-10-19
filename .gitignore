@@ -1,0 +1,40 @@
+# Dependencias e builds locais
+**/node_modules/
+FRONTEND/dist/
+**/target/
+DESKTOP/src-tauri/target-*/
+DESKTOP/src-tauri/resources/full-installer/
+RUST/.build-rust/
+
+# Credenciais e configuracoes privadas
+**/.env
+**/.env.*
+!**/.env.example
+BACKEND/credentials*.json
+BACKEND/CONFIG.dev
+SERVICOS/API-DANFE-BACKEND.xml
+*.key
+*.key.password
+*.pem
+*.pfx
+*.p12
+
+# Dados fiscais, estado e logs desta instalacao
+DADOS/
+SAIDAS/
+LOGS/
+DIST/
+*.log
+LOGSstatus-report.txt
+
+# Executaveis gerados; dependencias do instalador permanecem versionadas
+*.exe
+*.msi
+!SERVICOS/API-DANFE-BACKEND.exe
+!SERVICOS/node.msi
+*.pdb
+
+# Arquivos temporarios do sistema
+.DS_Store
+Thumbs.db
+Desktop.ini

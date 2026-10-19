@@ -1,0 +1,24 @@
+[package]
+name = "api-danfe-desktop"
+version = "0.1.15"
+description = "Aplicativo desktop do DANFE"
+authors = ["Delmmar"]
+edition = "2021"
+build = "build.rs"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon"] }
+serde_json = "1"
+tauri-plugin-process = "2.2.0"
+tauri-plugin-single-instance = "2.3.0"
+tauri-plugin-updater = { version = "2.8.0", default-features = false, features = ["rustls-tls"] }
+
+[target.'cfg(windows)'.dependencies]
+windows = { version = "0.62", features = ["Win32_Foundation", "Win32_Graphics_Dwm", "Win32_Graphics_Gdi", "Win32_UI_WindowsAndMessaging"] }
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]

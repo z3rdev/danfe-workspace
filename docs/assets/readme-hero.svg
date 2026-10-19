@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">DANFE Workspace</title>
+  <desc id="desc">Notas organizadas, rotina simplificada. Ilustração de um DANFE principal conectado aos layouts Simplificado, Etiqueta e Cupom Varejo.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1200" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071F1B"/>
+      <stop offset="1" stop-color="#0E3930"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1040 90) rotate(145) scale(560 410)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2ADD96" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#2ADD96" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#B9E9D7" stroke-opacity="0.045"/>
+    </pattern>
+    <clipPath id="bounds"><rect width="1200" height="400" rx="24"/></clipPath>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="180%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#001C13" flood-opacity="0.2"/>
+    </filter>
+    <symbol id="file" viewBox="0 0 24 24">
+      <path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8l-5-5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M14 3v5h5M8 12h8M8 16h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+  <g clip-path="url(#bounds)">
+    <rect width="1200" height="400" fill="url(#background)"/>
+    <rect width="1200" height="400" fill="url(#grid)"/>
+    <rect width="1200" height="400" fill="url(#glow)"/>
+    <path d="M623-40 483 440M646-40 506 440" stroke="#8DD9B9" stroke-opacity="0.07"/>
+    <circle cx="1168" cy="-6" r="138" stroke="#83DDB8" stroke-opacity="0.08"/>
+    <circle cx="1168" cy="-6" r="188" stroke="#83DDB8" stroke-opacity="0.06"/>
+
+    <g font-family="Segoe UI, Arial, sans-serif">
+      <rect x="64" y="49" width="9" height="9" rx="2" fill="#65E5AC"/>
+      <text x="84" y="58" fill="#9BD8BF" font-size="12" font-weight="600" letter-spacing="2.7">DANFE-WORKSPACE</text>
+      <text x="60" y="140" fill="#F4FBF7" font-size="66" font-weight="700" letter-spacing="-2.4">DANFE</text>
+      <text x="60" y="207" fill="#65E5AC" font-size="66" font-weight="400" letter-spacing="-2.6">Workspace</text>
+      <text x="64" y="253" fill="#D8EAE2" font-size="21">Notas organizadas.</text>
+      <text x="64" y="282" fill="#D8EAE2" font-size="21">Rotina simplificada.</text>
+
+      <g font-size="10" font-weight="600" letter-spacing="1.2" fill="#C5E6D6">
+        <rect x="64" y="324" width="102" height="27" rx="13.5" fill="#183E33" stroke="#365D4E"/>
+        <text x="82" y="342">PDF + XML</text>
+        <rect x="176" y="324" width="164" height="27" rx="13.5" fill="#183E33" stroke="#365D4E"/>
+        <text x="193" y="342">LAYOUTS VINCULADOS</text>
+        <rect x="350" y="324" width="135" height="27" rx="13.5" fill="#183E33" stroke="#365D4E"/>
+        <text x="369" y="342">PARA WINDOWS</text>
+      </g>
+
+      <g filter="url(#shadow)">
+        <rect x="752" y="58" width="366" height="112" rx="14" fill="#F5FBF7"/>
+        <rect x="772" y="80" width="42" height="42" rx="10" fill="#DFF3E8"/>
+        <use href="#file" x="781" y="89" width="24" height="24" color="#00845A"/>
+        <text x="829" y="98" fill="#123B2C" font-size="18" font-weight="600">DANFE principal</text>
+        <text x="829" y="119" fill="#567868" font-size="12">Seu documento de origem</text>
+        <path d="m1076 99 5 5 9-10" stroke="#00845A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M773 145h116M901 145h52" stroke="#CDE3D5" stroke-width="4" stroke-linecap="round"/>
+        <rect x="995" y="136" width="103" height="18" rx="9" fill="#DFF3E8"/>
+        <text x="1009" y="149" fill="#14734F" font-size="10" font-weight="600">1 DOCUMENTO</text>
+      </g>
+
+      <path d="M783 170v153q0 8 8 8h13M783 219h21M783 275h21" stroke="#5A967B" stroke-width="1.5"/>
+      <circle cx="783" cy="219" r="3" fill="#65E5AC"/>
+      <circle cx="783" cy="275" r="3" fill="#65E5AC"/>
+      <circle cx="783" cy="331" r="3" fill="#65E5AC"/>
+
+      <g fill="#153F33" stroke="#3B6853">
+        <rect x="804" y="196" width="314" height="46" rx="9"/>
+        <rect x="804" y="252" width="314" height="46" rx="9"/>
+        <rect x="804" y="308" width="314" height="46" rx="9"/>
+      </g>
+      <g color="#7AE2B1">
+        <use href="#file" x="821" y="209" width="20" height="20"/>
+        <path d="M839 270v8l-7 7-9-9 7-7h8a1 1 0 0 1 1 1Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+        <circle cx="834" cy="273" r="1" fill="currentColor"/>
+        <path d="M825 321h13v21l-3-2-3 2-3-2-4 2v-21ZM828 327h7M828 332h7" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+      </g>
+      <g fill="#E0F3E8" font-size="14">
+        <text x="855" y="224">Simplificado</text>
+        <text x="855" y="280">Etiqueta</text>
+        <text x="855" y="336">Cupom Varejo</text>
+      </g>
+      <g fill="#9AD7BB" font-size="11">
+        <text x="1077" y="223">PDF</text>
+        <text x="1077" y="279">PDF</text>
+        <text x="1077" y="335">PDF</text>
+      </g>
+    </g>
+  </g>
+</svg>
