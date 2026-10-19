@@ -1,24 +1,12 @@
-<div align="center">
-
-<img src="docs/assets/readme-hero.svg" alt="DANFE Workspace — gestão e organização de documentos fiscais" width="100%" />
-
 # DANFE Workspace
 
 **Documentos fiscais organizados. Processos simplificados.**
 
-Aplicativo desktop para Windows que centraliza a consulta de NF-e, a geração de DANFEs, o processamento em lote e a organização dos arquivos — com histórico local, automações e layouts vinculados a cada documento.
+Aplicativo desktop para Windows que centraliza a consulta de NF-e, a geração de DANFEs, o processamento em lote e a organização de arquivos, com histórico local, automações e layouts vinculados a cada documento.
 
-<p>
-  <img src="https://img.shields.io/badge/Vers%C3%A3o-0.1.15-00875a?style=flat-square&labelColor=102c27" alt="Versão 0.1.15" />
-  <img src="https://img.shields.io/badge/Windows-x64-00875a?style=flat-square&labelColor=102c27" alt="Windows x64" />
-  <img src="https://img.shields.io/badge/Tauri-2-00875a?style=flat-square&labelColor=102c27" alt="Tauri 2" />
-  <img src="https://img.shields.io/badge/React-19-00875a?style=flat-square&labelColor=102c27" alt="React 19" />
-  <img src="https://img.shields.io/badge/Node.js-24-00875a?style=flat-square&labelColor=102c27" alt="Node.js 24" />
-</p>
+![Versão 0.1.15](https://img.shields.io/badge/vers%C3%A3o-0.1.15-00875a?style=flat-square) ![Windows x64](https://img.shields.io/badge/Windows-x64-00875a?style=flat-square) ![Tauri 2](https://img.shields.io/badge/Tauri-2-00875a?style=flat-square) ![React 19](https://img.shields.io/badge/React-19-00875a?style=flat-square) ![Node.js 24](https://img.shields.io/badge/Node.js-24-00875a?style=flat-square)
 
-[Visão geral](#visão-geral) · [Funcionalidades](#funcionalidades) · [Instalação e desenvolvimento](#instalação-e-desenvolvimento) · [Build e releases](#build-e-releases) · [Documentação](#documentação)
-
-</div>
+[Visão geral](#visão-geral) · [Funcionalidades](#funcionalidades) · [Arquitetura](#arquitetura) · [Desenvolvimento](#instalação-e-desenvolvimento) · [Releases](#build-e-releases) · [Documentação](#documentação)
 
 ---
 
@@ -28,8 +16,7 @@ O **DANFE Workspace** reúne diferentes etapas da rotina com documentos fiscais 
 
 O aplicativo permite acompanhar o andamento de consultas e lotes, acessar logs, localizar documentos já processados e gerar formatos adicionais a partir dos XMLs disponíveis, sem precisar trabalhar com arquivos dispersos em várias pastas.
 
-> [!IMPORTANT]
-> A interface, o histórico e os arquivos gerados são mantidos no ambiente local. **A consulta fiscal e a conversão de XML dependem de serviços externos configurados.** A integração opcional com SQL Server também depende do acesso ao banco e à rede da operação.
+> **Importante:** A interface, o histórico e os arquivos gerados são mantidos no ambiente local. **A consulta fiscal e a conversão de XML dependem de serviços externos configurados.** A integração opcional com SQL Server também depende do acesso ao banco e à rede da operação.
 
 ## Funcionalidades
 
@@ -218,8 +205,7 @@ cd DESKTOP
 
 **Saída:** `DESKTOP/DANFE-Workspace.exe`.
 
-> [!NOTE]
-> Esse executável utiliza a API local na porta `3000`. **O backend deve estar em execução** para disponibilizar as funcionalidades que dependem dele.
+> **Observação:** Esse executável utiliza a API local na porta `3000`. **O backend deve estar em execução** para disponibilizar as funcionalidades que dependem dele.
 
 ### Gerar o instalador e a assinatura de atualização
 
@@ -285,10 +271,3 @@ danfe-workspace/
 | Instalação e utilização da extensão | [Extensão](EXTENSAO/README.md) |
 | Inicialização manual dos serviços | [Como iniciar](COMO_INICIAR.md) |
 | Núcleo experimental em Rust | [Rust](RUST/README.md) |
-
----
-
-<div align="center">
-  <img src="FRONTEND/public/assets/Danfe.webp" width="44" height="44" alt="Logo do DANFE Workspace" />
-  <p><strong>DANFE Workspace</strong><br/>Da consulta ao documento organizado.</p>
-</div>
